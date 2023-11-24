@@ -1,0 +1,62 @@
+{
+  "name": "safer",
+  "version": "0.1.0-next.0",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/index.d.ts",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/es/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "description": "Safely convert to the desired data and error-free refine values.",
+  "keywords": [
+    "safely-convert",
+    "safely-transform",
+    "error-free",
+    "refinement",
+    "type-safe",
+    "predictability",
+    "stability"
+  ],
+  "author": {
+    "name": "chkim116",
+    "email": "kormelon@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "rm -rf dist",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^0.34.6",
+    "glob": "^10.3.10",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.3",
+    "vitest": "^0.34.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chkim116/safer"
+  },
+  "bugs": {
+    "url": "https://github.com/chkim116/safer/issues"
+  },
+  "homepage": "https://github.com/chkim116/safer#readme"
+}
